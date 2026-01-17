@@ -2,8 +2,16 @@
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font: weight 400;
-  font-style: normal;
+  font-size: large;
+  font: weight bolder;
+}
+.font{
+  font-weight: 400;
+  font-size: 30px;
+}
+.bold{
+  font-weight: 800;
+  font-size: 50px;
 }
 .display-flex{
 display: flex;
@@ -53,17 +61,19 @@ margin: 0 auto;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.banner title{
+.banner-title{
 font-weight: 700;
 font-size: 4rem;
 }
 .banner-image{
-  width: 100%
+  max-width: 1800px;
+  margin-bottom: 8px;
 }
 .teams{
  justify-content: center;
  align-items: center;
  margin-top: 130px;
+ margin: 130px 160px;
 }
 .team-img-container{
   display: grid;
@@ -73,8 +83,8 @@ font-size: 4rem;
 .our-features{
   margin-left: 130px;
 }
-.features title{
-  font-size: 2.8rem;
+.features-title{
+  font-size: 5rem;
   font-weight: 700;
 }
 #quick-list{
@@ -82,8 +92,6 @@ font-size: 4rem;
   
 }
 .facts-container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,12 +103,15 @@ font-size: 4rem;
   height: 240px;
   border-radius: 8px;
   text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .all-up{
-  text-align: center;
-  margin-bottom: 50px;
+justify-items: center;
+align-items: center;
 }
 .all{
   margin-top: 20px;
@@ -115,16 +126,39 @@ font-size: 4rem;
   font-weight: 600;
 
 }
+.sponsors-info{
+  margin: 50 auto;
+  text-align: center;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) ;
+  margin: 20px auto;
+  gap: 50px;
+  justify-items: center;
+}
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
 @media screen and (max-width: 576px){
 .navbar,
 .teams,
 .nav-links{
   flex-direction: column;
 }
-.team-img-container{
+.team-img-container {
   grid-template-columns: repeat(1,1fr);
 }
 .our-features{
   margin-left: 20px;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 }
